@@ -23,6 +23,11 @@ group :development, :test do
   gem "debug", ">= 1.0.0", platforms: %i[ mri mingw x64_mingw ]
 end
 
+group :test do
+  gem 'rspec'
+  gem 'rspec-rails'
+end
+
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
